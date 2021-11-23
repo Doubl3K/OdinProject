@@ -29,3 +29,8 @@ body{
   border-radius: 10%;
   margin-left: 20px;
 }
+ #library{
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+ }

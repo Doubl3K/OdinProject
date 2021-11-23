@@ -1,0 +1,4 @@
+-change read to bool
+-Fix user Output
+Move Edit Button into own function
+-Make eddit button say read, not read depending on current status(+color change)
