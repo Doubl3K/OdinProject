@@ -21,7 +21,7 @@ function Library() {
   div.appendChild(ed);
   div.appendChild(book);
 
-  ed.addEventListener('click', ()=> {
+  ed.addEventListener('click', () => {
     if (didread == true) {
       ed.removeChild(edtext);
       edtext = document.createTextNode('Not Read');
@@ -54,14 +54,14 @@ function Library() {
 function deleteEntry(div) {
   let rem = document.createElement('button');
   let remtext = document.createTextNode('remove');
-  rem.id =  i;
+  rem.id = i;
   rem.appendChild(remtext);
   div.appendChild(rem);
-  rem.addEventListener('click', ()=> {
-      rem.parentElement.remove();
-      myLibaly.splice(rem.getElementById, 1);
-      i--;
-    });
+  rem.addEventListener('click', () => {
+    rem.parentElement.remove();
+    myLibaly.splice(rem.getElementById, 1);
+    i--;
+  });
   rem.style.cssText = `background-color : #ff003b;
     position: fixed;
     right:5px;`;
@@ -79,14 +79,14 @@ function Book(title, author, pages, read) {
 
 function addBookToLibrary() {
   const confirmButton = document.getElementById('confirm');
-  confirmButton.addEventListener('click', ()=> {
+  confirmButton.addEventListener('click', () => {
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     const pages = document.getElementById('pages').value;
     let read = '';
     if (document.getElementById('r1y').checked) {
       read = true;
-    }else {
+    } else {
       read = false;
     }
 
@@ -106,9 +106,9 @@ function entryAdded() {
     text-align:center;
     margin-top: 10px;
     `;
-  setTimeout(function () {
-      div.removeChild(div.firstChild);
-    }, 5000);
+  setTimeout(function() {
+    div.removeChild(div.firstChild);
+  }, 5000);
 }
 
 let i = 0;
