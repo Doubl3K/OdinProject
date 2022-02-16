@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form class="" action="index.html" method="post">
+
+    <fieldset>
+      <legend>Contact Details</legend>
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id='firstName' name="firstName" placeholder="Max">
+      </div>
+
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id='lastName' name="lastName" placeholder="Mustermann">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>User Confirmation</legend>
+
+      <div>
+        <label for="user_email">Email Adress:</label>
+        <input type="email" id="user_email" name="email" placeholder="max.muster@gmail.com">
+      </div>
+
+      <div>
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" name="password" placeholder="***********">
+      </div>
+
+      <div>
+        <label for="phonenumber">Phone:</label>
+        <input type="tel" id="phonenumer" name="phonenumer" placeholder="+49234414700000">
+      </div>
+
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" placeholder="18.06.1996">
+      </div>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Order Details</legend>
+
+      <div>
+        <label for="car">Delivery Car</label>
+        <select class="test" name="car">
+          <option value="mercedes">Mercedes</option>
+          <option value="tesla">Tesla</option>
+          <option value="bmw">BMW</option>
+          <option value="ford">Ford</option>
+          <option value="mini">Mini</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="tickettype">Ticket Type:</label>
+        <input type="radio" id="child" name="tickettype" value="child">
+        <label for="child">Child</label>
+        <input type="radio" id="adult" name="tickettype" value="adult">
+        <label for="adult">Adult</label>
+        <input type="radio" id="senior" name="tickettype" value="senior">
+        <label for="senior">Senior</label>
+      </div>
+
+      <div>
+        <label for="topping">Pizza Toppings:</label>
+        <input type="checkbox" id="sausage" name="topping" value="sausage">
+        <label for="sausage">Sausage</label>
+        <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+        <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+        <label for="pepperoni">Pepperonis</label>
+      </div>
+    </fieldset>
+
+    <input type="image" alt="Click here!" src="https://miro.medium.com/max/545/1*JiSQVnR_nibjRC1azRl6Fw.jpeg" width="200px" height="300px" name="captcha-test" value="">
+
+  <div>
+      <input type="file" id="file" name="file" value="">
+  </div>
+
+  <div>
+      <input type="search" id="search" name="seach" placeholder="Seach">
+  </div>
+
+    <div>
+      <button type="submit" name="button">Done!</button>
+      <button type="reset" name="button">Reset!</button>
+    </div>
+    <div>
+      <label for="price">Price</label>
+      <input type="range" id="price" name="price" min="10" max="50" value="20">
+      <output name="result" for="price"></output>
+    </div>
+    <label for="color">Color Picker</label>
+    <input type="color" type="color" name="color">
+
+    <input type="hidden" id="timestamp" name="timestamp" value="15:20 12.15.2020">
+
+  </form>
+</body>
+
+</html>
