@@ -1,0 +1,21 @@
+*{
+  background-color: black;
+  color: white;
+}
+input,textarea,select,button{
+  padding: 5px;
+}
+label{
+  margin-right: 1em;
+}
+
+fieldset{
+  margin-bottom: 10px;
+  position: relative;
+}
+
+legend{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
