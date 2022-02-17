@@ -1,0 +1,58 @@
+<!-- This form is a mockup for the https://www.internetingishard.com/html-and-css/forms/ form with some slight tweeks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="Chrome">
+  <title>Speaker Submission</title>
+  <link rel="stylesheet" href="desktop.css">
+</head>
+<body>
+  <h1>Speaker Submission</h1>
+  <p>Want to speak at our fake conference? Fill out this form.</p>
+
+  <form class="" action="index.html" method="post">
+
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Max Mustermann">
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="max.muster@gmail.com">
+    </div>
+
+    <div>
+      <label for="talktype">Type of Talk</label>
+      <input type="radio" name="talktype" id="talktype" value="main"> Main Stage
+      <input type="radio" name="talktype" id="talktype" value="shop"> Workshop
+    </div>
+
+    <div>
+      <label for="tsize">T-Shirt Size</label>
+      <select class="" name="tsize">
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">Xtra-Large</option>
+        <option value="2xl">XXtra-Large</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="desc">Description</label>
+      <textarea name="name" rows="8" cols="80" placeholder="Describe your talk in 500 words or less"></textarea>
+    </div>
+
+    <div>
+      <label for="conf">I hereby confirm that the contents of my talk are my own.</label>
+      <input type="checkbox" name="conf" id="conf" value="">
+    </div>
+
+    <input type="submit" name="submit" value="Submit!">
+
+  </form>
+</body>
+</html>
