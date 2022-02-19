@@ -15,27 +15,29 @@
   <p>Want to speak at our fake conference? Fill out this form.</p>
   </header>
 
-  <form class="" action="index.html" method="post">
+  <form class="speaker-form" action="index.html" method="post">
 
-    <div>
+    <div class="form-row">
       <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Max Mustermann">
+      <input type="text" name="name" id="name" placeholder=" Max Mustermann">
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="email">Email</label>
       <input type="email" name="email" id="email" placeholder="max.muster@gmail.com">
     </div>
 
-    <div>
-      <label for="talktype">Type of Talk</label>
-      <input type="radio" name="talktype" id="talktype" value="main"> Main Stage
-      <input type="radio" name="talktype" id="talktype" value="shop"> Workshop
-    </div>
+    <fieldset class="legacyformrow">
+    <legend>Type of Talk</legend>
+    <input type="radio" name="talktype" id="talktype1" value="main">
+    <label for="talktype1" class="radiolabel">Main Stage</label>
+    <input type="radio" name="talktype" id="talktype2" value="shop" checked>
+    <label for="talktype2" class="radiolabel">Workshop</label>
+    </fieldset>
 
-    <div>
+    <div class="form-row">
       <label for="tsize">T-Shirt Size</label>
-      <select class="" name="tsize">
+      <select class="tsize" name="tsize">
         <option value="s">Small</option>
         <option value="m">Medium</option>
         <option value="l">Large</option>
@@ -44,17 +46,20 @@
       </select>
     </div>
 
-    <div>
+    <div class="form-row">
       <label for="desc">Description</label>
-      <textarea name="name" rows="8" cols="80" placeholder="Describe your talk in 500 words or less"></textarea>
+      <textarea name="desc" id=desc rows="8" cols="80" placeholder="Describe your talk in 500 words or less"></textarea>
     </div>
 
-    <div>
-      <label for="conf">I hereby confirm that the contents of my talk are my own.</label>
+    <div class="form-row">
+      <label  class="checkbox-label" for="conf">I confirm that the contents of the talk are my own.</label>
       <input type="checkbox" name="conf" id="conf" value="">
     </div>
 
-    <input type="submit" name="submit" value="Submit!">
+
+  <div class="form-row">
+    <button type="submit" name="submit">Submit!</button>
+  </div>
 
   </form>
 </body>

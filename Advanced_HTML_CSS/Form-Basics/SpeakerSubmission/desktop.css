@@ -31,3 +31,111 @@ body{
   margin: 20px;
   padding: 2%
 }
+
+.speaker-form{
+  background-color: rgb(26, 27, 27);
+  border: solid white 1px;
+  border-radius: 5px;
+
+  width: 80%;
+  margin: 20px;
+  padding: 2%
+}
+
+.form-row{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+}
+
+.form-row label{
+  margin-bottom: 5px;
+}
+
+.form-row input[type="text"],[type="email"]{
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(154, 154, 154) 1px;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row input[type="email"]:invalid{
+  border: solid red 1px;
+  color: #D55C5F;
+}
+
+.legacyformrow{
+  border: none;
+  margin-bottom: 40px;
+}
+
+.legacyformrow legend{
+  margin-bottom: 15px;
+}
+
+.legacyformrow .radiolabel{
+  display: block;
+  font-size: 14px;
+  padding: 0 20px 0 10px;
+}
+
+.legacyformrow input[type="radio"]{
+  margin-top: 2px;
+}
+
+.legacyformrow .radiolabel,
+.legacyformrow input[type="radio"]{
+  float: left;
+}
+
+.form-row select{
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  webkit-appearance: none;
+}
+
+.form-row textarea{
+  font-size: 14px;
+  border: solid rgb(154, 154, 154) 1px;
+  border-radius: 3px;
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+  width: 100%
+}
+
+.form-row .checkbox-label{
+  margin-bottom: 3px;
+}
+
+.form-row button{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(87, 133, 221);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
+  max-width: 40%;
+  align-self: center;
+}
+
+.form-row button:hover{
+  background-color: rgb(150, 174, 221) ;
+}
+
+.form-row button:active{
+  background-color: rgb(176, 197, 238);
+}
