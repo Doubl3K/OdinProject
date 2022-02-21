@@ -68,11 +68,6 @@ body{
   font-size: 14px;
 }
 
-.form-row input[type="email"]:invalid{
-  border: solid red 1px;
-  color: #D55C5F;
-}
-
 .legacyformrow{
   border: none;
   margin-bottom: 40px;
@@ -138,4 +133,13 @@ body{
 
 .form-row button:active{
   background-color: rgb(176, 197, 238);
+}
+
+.form-row input[type="text"]:valid,[type="email"]:valid{
+  border: solid green 1px;
+}
+
+.form-row input[type='text']:invalid ,[type="email"]:invalid{
+  border: solid red 1px;
+  color: #D55C5F;
 }

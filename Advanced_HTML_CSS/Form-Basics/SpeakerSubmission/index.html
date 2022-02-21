@@ -18,20 +18,21 @@
   <form class="speaker-form" action="index.html" method="post">
 
     <div class="form-row">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder=" Max Mustermann">
+      <label for="name">Name *</label>
+      <input type="text" name="name" id="name" placeholder=" Max Mustermann" pattern="(\w+\s{1}\w+(\s{1}\w+)?(\s{1}\w+)?)" title="Please enter a first and last name: John Smith.
+      Up to two middle names are optional." required>
     </div>
 
     <div class="form-row">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="max.muster@gmail.com">
+      <label for="email">Email *</label>
+      <input type="email" name="email" id="email" placeholder="max.muster@gmail.com" title="Please enter a valid Mail adress." required>
     </div>
 
     <fieldset class="legacyformrow">
     <legend>Type of Talk</legend>
     <input type="radio" name="talktype" id="talktype1" value="main">
     <label for="talktype1" class="radiolabel">Main Stage</label>
-    <input type="radio" name="talktype" id="talktype2" value="shop" checked>
+    <input type="radio" name="talktype" id="talktype2" value="shop">
     <label for="talktype2" class="radiolabel">Workshop</label>
     </fieldset>
 
@@ -47,13 +48,13 @@
     </div>
 
     <div class="form-row">
-      <label for="desc">Description</label>
-      <textarea name="desc" id=desc rows="8" cols="80" placeholder="Describe your talk in 500 words or less"></textarea>
+      <label for="desc">Description *</label>
+      <textarea name="desc" id=desc rows="8" cols="80" placeholder="Describe your talk in 500 words or less." minlength="10" required></textarea>
     </div>
 
     <div class="form-row">
-      <label  class="checkbox-label" for="conf">I confirm that the contents of the talk are my own.</label>
-      <input type="checkbox" name="conf" id="conf" value="">
+      <label  class="checkbox-label" for="conf">I confirm that the contents of the talk are my own. *</label>
+      <input type="checkbox" name="conf" id="conf" value="" required>
     </div>
 
 
