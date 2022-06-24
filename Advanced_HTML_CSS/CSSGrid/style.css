@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    margin-top: 3%;
+    display: inline-grid;
+    grid-template: 50px 50px 50px 50px 50px / 50px 50px 50px 50px 50px;
+    grid-auto-rows: 50px;
+    grid-auto-columns: 50px;
+    background-color:#002ca3 ;
+}
+.container div{
+    border: 1px white solid;
+    text-align: center;
+    font-size: .5em;
+}
+.living-room{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.kitchen{
+    grid-area: 3/3/6/4;
+}
+.bedroom{
+    grid-area: 3/1/5/3;
+}
+.closet{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+.bathroom{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
