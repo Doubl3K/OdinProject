@@ -169,3 +169,28 @@ body{
     width: 1vw;
     margin-left: 1vw;
 }
+
+.announcment-wrapper{
+    display: grid;
+    grid-template: 2vh 1fr 2vh 1fr 2vh / 1fr;
+    background-color: #737373;
+    margin-right: 2vw;
+    padding-left: 2vw;
+    margin-top: 3vh;
+    border-radius: 5px;
+    padding-right: 2vw;
+    overflow: hidden;
+}
+
+.announcment-wrapper h1{
+    font-size: 1rem;
+}
+
+.announcment-wrapper :nth-child(2){
+    border-bottom: white solid 1px;
+    padding-bottom: 2vh;
+}
+
+.announcment-wrapper :nth-child(4){
+    border-bottom:  white solid 1px;
+}
