@@ -170,7 +170,7 @@ body{
     margin-left: 1vw;
 }
 
-.announcment-wrapper{
+.announcement-wrapper{
     display: grid;
     grid-template: 2vh 1fr 2vh 1fr 2vh / 1fr;
     background-color: #737373;
@@ -182,15 +182,49 @@ body{
     overflow: hidden;
 }
 
-.announcment-wrapper h1{
+.announcement-wrapper h1{
     font-size: 1rem;
 }
 
-.announcment-wrapper :nth-child(2){
+.announcement-wrapper :nth-child(2){
     border-bottom: white solid 1px;
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
 }
 
-.announcment-wrapper :nth-child(4){
+.announcement-wrapper :nth-child(4){
     border-bottom:  white solid 1px;
+}
+
+#trending{
+    margin-top: 3vh;
+}
+.trending-wrapper{
+    background-color: #737373;
+    border-radius: 15px;
+    display: grid;
+    grid-template: repeat(3,1fr) / 1fr;
+    margin-right: 2vw;
+    margin-top: 3vh;
+}
+
+.trending-wrapper img{
+    width: 2vw;
+    background-color: green;
+    border-radius: 150px;
+    align-self: center;
+    margin-right: 1vw;
+    margin-left: 1.5vw;
+}
+
+.trendinguser-wrapper{
+    display: flex;
+    height: 8vh;
+}
+
+.trendinguser-wrapper p{
+    font-size: 1rem;
+}
+
+#gitico{
+    background-color: #f1502f;
 }
