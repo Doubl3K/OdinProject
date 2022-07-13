@@ -1,4 +1,4 @@
-body{
+body {
     background-color: black;
     color: white;
     padding: 0px;
@@ -9,8 +9,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* sidebar */
-.sidebar-wrapper{
+
+.sidebar-wrapper {
     background-color: #12110e;
     grid-column: 1 / 1;
     grid-row: 1 / 3;
@@ -22,25 +24,28 @@ body{
     padding-top: 2vh;
 }
 
-#logo{
+#logo {
     font-size: 1.3em;
 }
-#logo img{
+
+#logo img {
     width: 2.15rem;
 }
 
-.sidebar-content{
+.sidebar-content {
     margin-top: 1.5vh;
     margin-left: 1vw;
 }
 
-.sidebar-content img{
+.sidebar-content img {
     width: 1.3rem;
     margin-right: 5%;
 }
 
+
 /* topbar */
-.topbar-wrapper{
+
+.topbar-wrapper {
     background-color: rgb(32, 32, 32);
     display: grid;
     grid-template: 1fr 2fr / 3fr 1fr;
@@ -49,7 +54,7 @@ body{
     padding-right: .5vw;
 }
 
-.topbar-item input[type=search]{
+.topbar-item input[type=search] {
     width: 50vw;
     height: 3vh;
     border-radius: 25px;
@@ -57,57 +62,58 @@ body{
     border: none;
 }
 
-#searchfield{
+#searchfield {
     margin-left: 3vw;
 }
 
-#searchfield img{
-    position:relative;
+#searchfield img {
+    position: relative;
     top: 8px;
     height: 21px;
     margin-right: 2vw;
 }
 
-.topbar-item img{
+.topbar-item img {
     width: 2vw;
 }
 
-#tbp{
+#tbp {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 6vw;
 }
 
-#pp{
+#pp {
     background-color: orange;
     border-radius: 100px;
 }
 
-.greeting{
+.greeting {
     display: grid;
     align-items: center;
     grid-template: 2vh 3vh / 5vw 25vw;
     margin-left: 3vw;
 }
 
-#ppb{
-            grid-column: 1 / 1;
-            grid-row: 1 / 3;
-            width: 3.2vw;
-            background-color: orange;
-            border-radius: 100px;
-            align-self: center;
+#ppb {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+    width: 3.2vw;
+    background-color: orange;
+    border-radius: 100px;
+    align-self: center;
 }
 
-#socialat{
+#socialat {
     font-size: 1.4rem;
 }
 
-.upbuttons{
+.upbuttons {
     justify-self: center;
 }
-.topbar-item button{
+
+.topbar-item button {
     margin-right: .5vw;
     margin-left: .5vw;
     background-color: #00a4ef;
@@ -119,8 +125,10 @@ body{
     height: 3vh;
 }
 
+
 /* content */
-.content-wrapper{
+
+.content-wrapper {
     background-color: #1a1919;
     display: grid;
     grid-template: 1fr 2fr / 3fr 1fr;
@@ -129,7 +137,7 @@ body{
     gap: 15px;
 }
 
-.projects-wrapper{
+.projects-wrapper {
     grid-column: 1 / 1;
     grid-row: 1 / 3;
     display: grid;
@@ -139,12 +147,12 @@ body{
     padding-right: 3vw;
 }
 
-#pheader{
+#pheader {
     grid-column: 1/3;
     grid-row: 1/1;
 }
 
-.project-items{
+.project-items {
     background-color: #737373;
     padding-left: 1vw;
     padding-top: 2vh;
@@ -152,25 +160,25 @@ body{
     box-shadow: 5px 7px #00a4ef;
     display: grid;
     grid-template: 3vh 1fr / 1fr;
-    overflow:auto;
+    overflow: auto;
 }
 
-.project-items p{
+.project-items p {
     font-size: 0.85rem;
     padding-right: 2vw;
 }
 
-.project-icons{
+.project-icons {
     justify-self: end;
     margin-right: 2vw;
 }
 
-.project-items img{
+.project-items img {
     width: 1vw;
     margin-left: 1vw;
 }
 
-.announcement-wrapper{
+.announcement-wrapper {
     display: grid;
     grid-template: 2vh 1fr 2vh 1fr 2vh / 1fr;
     background-color: #737373;
@@ -182,32 +190,33 @@ body{
     overflow: hidden;
 }
 
-.announcement-wrapper h1{
+.announcement-wrapper h1 {
     font-size: 1rem;
 }
 
-.announcement-wrapper :nth-child(2){
+.announcement-wrapper :nth-child(2) {
     border-bottom: white solid 1px;
     padding-bottom: 1vh;
 }
 
-.announcement-wrapper :nth-child(4){
-    border-bottom:  white solid 1px;
+.announcement-wrapper :nth-child(4) {
+    border-bottom: white solid 1px;
 }
 
-#trending{
+#trending {
     margin-top: 3vh;
 }
-.trending-wrapper{
+
+.trending-wrapper {
     background-color: #737373;
     border-radius: 15px;
     display: grid;
-    grid-template: repeat(3,1fr) / 1fr;
+    grid-template: repeat(3, 1fr) / 1fr;
     margin-right: 2vw;
     margin-top: 3vh;
 }
 
-.trending-wrapper img{
+.trending-wrapper img {
     width: 2vw;
     background-color: green;
     border-radius: 150px;
@@ -216,15 +225,15 @@ body{
     margin-left: 1.5vw;
 }
 
-.trendinguser-wrapper{
+.trendinguser-wrapper {
     display: flex;
     height: 8vh;
 }
 
-.trendinguser-wrapper p{
+.trendinguser-wrapper p {
     font-size: 1rem;
 }
 
-#gitico{
+#gitico {
     background-color: #f1502f;
 }
